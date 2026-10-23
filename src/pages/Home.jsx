@@ -1,6 +1,6 @@
 import MovieCard from "../components/movieCard";
 import { useState } from "react";
-
+import "../css/Home.css"
 
 function Home() {
 
@@ -24,7 +24,7 @@ function Home() {
             <input type="text" placeholder="Search movie..." className="search-input"
                 value={searchQuery} onChange={(e) => setSearchQuery(e.target.value)}
             />
-            <button type="submit" className="search-btn">Search</button>
+            <button type="submit" className="search-button">Search</button>
         </form>
         <div className="movies-grid">
             {movies.map(
